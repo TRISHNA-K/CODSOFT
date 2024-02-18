@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+       body{
+            background-color: rgb(6, 1, 53);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(11, 78, 104)
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(186, 13, 28);
+            font-size: 1.04rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(135, 198, 223);
+            height: 1.2px;
+            margin: 60px 84px;
+
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+            margin: 30px 0;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+
+            font-size: 2rem;
+
+        }
+
+        .leftSection .btn{
+
+           padding:12px;
+           background-color:rgb(0, 0, 153);
+           color : blue;
+           border: 2px solid white;
+           border-radius:6px;
+           font-size:20px;
+           cursor:pointer;
+
+
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: 90px 0;
+        }
+
+        .purple {
+            color: rgb(169, 133, 213);
+
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(200, 178, 227);
+        }
+
+        .secondSection {
+            max-width: 60vw;
+            text-align: center;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.4rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 50vw;
+            height: 2px;
+            margin: 100px 0px;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0px 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            width: 150px;
+            position: relative;
+            top: 98px;
+            font-size: 14px;
+
+        }
+
+        .vertical-desc {
+            width: 150px;
+            position: relative;
+            top: 105px;
+            color: grey;
+            font-size: 9px;
+
+        }
+
+        footer {
+            background-color: rgb(5, 26, 49);
+            height: 170px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            background-color: grey;
+            text-align: center;
+            padding: 12px 0;
+        }
+        main section{
+            display:block;
+        }
+        section{
+            text-align:center;
+            padding:50px 0;
+        }
+        section h1{
+            font-size:2rem;
+            margin-bottom:20px;
+
+        }
+        section .box{
+            display:flex;
+            justify-content:space-around;
+            margin-top:20px;
+
+        }
+        .vertical-title{
+            font-size:1.2rem;
+            margin-bottom:10px;
+        }
+        .vertical-desc{
+            font-size:0.9rem;
+            color:grey;
+
+        }
+        #about{
+            background-color: rgb(33,37,41);
+            color:white;
+        }
+        .about-content {
+            max-width:800px;
+            margin:auto;
+            padding:50px 20px;
+        }
+        .about-content h1{
+            font-size:2.5rem;
+            margin-bottom:20px;
+        }
+        .about-content p{
+            font-size:1.1rem;
+            line-height:1.6;
+            margin:15px;
+        }
+        #skills{
+            background-color: rgb(25, 44, 63);
+            color:white;
+        }
+        .skills-content {
+            max-width:800px;
+            margin:auto;
+            padding:50px 20px;
+        }
+        .skills-content h1{
+            font-size:2.5rem;
+            margin-bottom:20px;
+        }
+        .skills-content p{
+            font-size:1rem;
+            line-height:1.6;
+            margin:15px;
+        }
+        #contact{
+            background-color: rgb(25, 44, 63);
+            color:white;
+        }
+        .contact-content {
+            max-width:800px;
+            margin:auto;
+            padding:50px 20px;
+        }
+        .contact-content h1{
+            font-size:2.5rem;
+            margin-bottom:20px;
+        }
+        .contact-content p{
+            font-size:0.5rem;
+            line-height:1.6;
+            margin:15px;
+        }
+
+
+        
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Trishna's Portfolio</div>
+            <div id = "" class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                   
+                    <li><a href="#contact">Contact Me</a></li>
+                
+
+                </ul>
+                
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id = "home" class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Trishna</span>
+                <div>and i am a passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    
+                    <button class="btn"><a href="RESUME.pdf" target="_blank" style="text-decoration: none; color: white;">Download Resume</a></button>
+<button class="btn"><a href="" target="_blank" style="text-decoration: none; color: white;">Visit GitHub</a></button>
+                    
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="bgi.png" alt="">
+
+            </div>
+
+
+
+        </section>
+        <hr>
+
+        <section id = "about" class="secondSection">
+            <span class="text-gray">What I have done so far?</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+
+                    <div class="vertical-title">
+                        Python Programmer(2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Completed 2 Milestone Project from Udemy Python programming course and working on 100 days of
+                        code in python
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Wed Development(2024)
+                    </div>
+
+                    <div class="vertical-desc">
+                        Completed 1 month Virtual Internship Program bu CodSoft
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Graphic Design(4 months)
+                    </div>
+
+                    <div class="vertical-desc">
+                        Worked as a Design Team Member in IQuest Club(VIT-AP)
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <hr>
+        <section id="skills">
+            <h1>Skills
+                <p>Python programming</p>
+                <p>Web Deveolpment</p>
+                <p>Problem Solving</p>
+                <p>Graphic Designing</p>
+                <p>Critical Thinking</p>
+            </h1>
+        </section>
+        <hr>
+        <section id="contact">
+            <h1>Contact Me
+                <p>Feel free to reach out me guys</p>
+                <p>Gmail id:trishnakurrupath@gmail.com</p>
+                <p>linkedin id:https://www.linkedin.com/in/trishna-k-834230275</p>
+            
+            </h1>
+        </section>
+        
+    
+
+</head>
+
+<body>
+
+    
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Trishna's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second"></div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Skills</li>
+                <li>Contact</li>
+            </ul>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+        <div class="footer-rights">
+            copyright &#169;www.trishnasportfolio.com| All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Software Engineer ', 'Web Designer'],
+            typeSpeed: 50,
+        });
+        
+    </script>
+
+</body>
+
+</html>
